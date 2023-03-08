@@ -48,6 +48,9 @@ Sendo assim, visualizamos algumas entidades para nosso banco. Elas são: Categor
 
 
  ## Tecnologias 🌐
+ Express, Javascript, Sequelize, SQLite, React, Bootstrap, Axios.
+
+
  
  ## Guia de Uso :hammer:
  
