@@ -5,7 +5,7 @@ const Produto = () => {
   const [produtos, setProdutos] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:4200/listProduto')
+    axios.get('https://pubadmin.onrender.com/listProduto')
       .then((res) => {
         setProdutos(res.data);
       })
@@ -15,7 +15,7 @@ const Produto = () => {
   }, []);
 
   const handleDelete = (id) => {
-    axios.delete(`http://localhost:4200/deleteProduto/${id}`)
+    axios.delete(`https://pubadmin.onrender.com/deleteProduto/${id}`)
       .then(() => {
         setProdutos(produtos.filter((produto) => produto.id_produto !== id));
       })

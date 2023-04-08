@@ -8,7 +8,7 @@ const NovoFornecedor = () => {
   console.log(fornecedor);
 
   const handleSubmit = async (e) => {
-    await axios.post(`http://localhost:4200/fornecedores`, fornecedor);
+    await axios.post(`https://pubadmin.onrender.com/fornecedores`, fornecedor);
   };
 
   return (

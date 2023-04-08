@@ -13,13 +13,13 @@ const EditarFornecedor = () => {
   console.log(fornecedor);
 
   useEffect(() => {
-    axios.get(`http://localhost:4200/fornecedores/${id}`).then((res) => {
+    axios.get(`https://pubadmin.onrender.com/fornecedores/${id}`).then((res) => {
       setFornecedor(res.data);
     });
   }, [id]);
 
   const handleSubmit = async (e) => {
-    await axios.put(`http://localhost:4200/fornecedores/${id}`, fornecedor);
+    await axios.put(`https://pubadmin.onrender.com/fornecedores/${id}`, fornecedor);
   };
 
   return (

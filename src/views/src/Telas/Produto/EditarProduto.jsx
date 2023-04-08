@@ -17,14 +17,14 @@ const EditarProduto = () => {
   console.log(produto);
 
   useEffect(() => {
-    axios.get(`http://localhost:4200/searchProduto/${id}`).then((res) => {
+    axios.get(`https://pubadmin.onrender.com/searchProduto/${id}`).then((res) => {
       console.log(res.data.data_criacao);
       setProduto(res.data);
     });
   }, [id]);
 
   const handleSubmit = async (e) => {
-    await axios.put(`http://localhost:4200/updateProduto/${id}`, produto);
+    await axios.put(`https://pubadmin.onrender.com/updateProduto/${id}`, produto);
   };
 
   return (

@@ -13,7 +13,7 @@ export default function EditarEstoque() {
 
     useEffect(() => {
         async function getEstoque() {
-            const data = await axios.get(`http://localhost:4200/estoque/${id}`).
+            const data = await axios.get(`https://pubadmin.onrender.com/estoque/${id}`).
                 then((res) => {
                     setEstoque(res.data)
                 }).catch((error) => {
@@ -25,7 +25,7 @@ export default function EditarEstoque() {
 
 
     const handleSubmit = async () => {
-        await axios.put(`http://localhost:4200/estoque/${id}`, estoque);
+        await axios.put(`https://pubadmin.onrender.com/estoque/${id}`, estoque);
     }
 
     return (

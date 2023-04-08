@@ -9,7 +9,7 @@ const NovoFuncionario = () => {
   console.log(funcionario);
 
   const handleSubmit = async (e) => {
-    await axios.post(`http://localhost:4200/funcionarios`, funcionario);
+    await axios.post(`https://pubadmin.onrender.com/funcionarios`, funcionario);
   };
 
   return (

@@ -5,7 +5,7 @@ const Funcionario = () => {
   const [funcionarios, setFuncionarios] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:4200/funcionarios')
+    axios.get('https://pubadmin.onrender.com/funcionarios')
       .then((res) => {
         setFuncionarios(res.data);
       })
@@ -15,7 +15,7 @@ const Funcionario = () => {
   }, []);
 
   const handleDelete = (id) => {
-    axios.delete(`http://localhost:4200/funcionarios/${id}`)
+    axios.delete(`https://pubadmin.onrender.com/funcionarios/${id}`)
   }
 
   return (

@@ -7,7 +7,7 @@ export default function Estoque() {
 
     useEffect(() => {
         async function getEstoque() {
-            const data = await axios.get("http://localhost:4200/estoque").
+            const data = await axios.get("https://pubadmin.onrender.com/estoque").
                 then((res) => {
                     setEstoques(res.data)
                 }).catch((error) => {
@@ -18,7 +18,7 @@ export default function Estoque() {
     }, [])
 
     const handleDelete = (id) => {
-        axios.delete(`http://localhost:4200/estoque/${id}`)
+        axios.delete(`https://pubadmin.onrender.com/estoque/${id}`)
             .then(() => {
                 setEstoques(estoques.filter((estoque) => estoque.id_Estoque !== id));
             })

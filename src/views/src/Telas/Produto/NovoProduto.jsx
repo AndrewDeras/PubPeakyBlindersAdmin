@@ -13,7 +13,7 @@ const NovoProduto = () => {
   console.log(produto);
 
   const handleSubmit = async (e) => {
-    await axios.post(`http://localhost:4200/createProduto`, produto);
+    await axios.post(`https://pubadmin.onrender.com/createProduto`, produto);
   };
 
   return (

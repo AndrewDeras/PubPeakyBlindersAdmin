@@ -12,7 +12,7 @@ const NovaUnidade = () => {
   console.log(unidade);
 
   const handleSubmit = async (e) => {
-    await axios.post(`http://localhost:4200/unidade/`, unidade);
+    await axios.post(`https://pubadmin.onrender.com/unidade/`, unidade);
   };
 
 

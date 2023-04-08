@@ -11,7 +11,7 @@ export default function NovoEstoque() {
     })
 
     const handleSubmit = async () => {
-        await axios.post(`http://localhost:4200/estoqueCreate`, estoque);
+        await axios.post(`https://pubadmin.onrender.com/estoqueCreate`, estoque);
     }
     return (
         <div className="mt-5 p-5">

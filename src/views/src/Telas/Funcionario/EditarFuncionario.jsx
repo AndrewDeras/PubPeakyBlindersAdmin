@@ -12,13 +12,13 @@ const EditarFuncionario = () => {
   });
   console.log(funcionario);
   useEffect(() => {
-    axios.get(`http://localhost:4200/funcionarios/${id}`).then((res) => {
+    axios.get(`https://pubadmin.onrender.com/funcionarios/${id}`).then((res) => {
       setFuncionario(res.data);
     });
   }, [id]);
 
   const handleSubmit = async (e) => {
-    await axios.put(`http://localhost:4200/funcionarios/${id}`, funcionario);
+    await axios.put(`https://pubadmin.onrender.com/funcionarios/${id}`, funcionario);
   };
 
   return (

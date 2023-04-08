@@ -5,13 +5,13 @@ const Unidade = () => {
   const [unidades, setUnidades] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:4200/unidades').then((res) => {
+    axios.get('https://pubadmin.onrender.com/unidades').then((res) => {
       setUnidades(res.data);
     })
   }, [])
 
   const handleDelete = (id) => {
-    axios.delete(`http://localhost:4200/unidade/${id}`)
+    axios.delete(`https://pubadmin.onrender.com/unidade/${id}`)
   }
 
 

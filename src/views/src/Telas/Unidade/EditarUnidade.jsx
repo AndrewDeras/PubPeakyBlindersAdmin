@@ -15,14 +15,14 @@ const EditarUnidade = () => {
   });
 
   useEffect(() => {
-    axios.get(`http://localhost:4200/unidade/${id}`).then((res) => {
+    axios.get(`https://pubadmin.onrender.com/unidade/${id}`).then((res) => {
       console.log(res.data);
       setUnidade(res.data);
     });
   }, [id]);
 
   const handleSubmit = async (e) => {
-    await axios.put(`http://localhost:4200/unidade/${id}`, unidade);
+    await axios.put(`https://pubadmin.onrender.com/unidade/${id}`, unidade);
   };
 
   return (

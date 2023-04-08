@@ -5,13 +5,13 @@ const Fornecedor = () => {
   const [fornecedor, setFornecedor] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:4200/fornecedores').then((res) => {
+    axios.get('https://pubadmin.onrender.com/fornecedores').then((res) => {
       setFornecedor(res.data);
     })
   }, [])
 
   const handleDelete = (id) => {
-    axios.delete(`http://localhost:4200/fornecedores/${id}`)
+    axios.delete(`https://pubadmin.onrender.com/fornecedores/${id}`)
   }
 
 
